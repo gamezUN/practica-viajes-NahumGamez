@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Travel Agency - Práctica Git & JS</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="header">
         <div class="panoramic-image">Espacio para Banner de Viajes</div>
@@ -16,7 +18,8 @@
     </header>
 
     <div class="countries-bar">
-        <span>Estados Unidos</span> • <span>Francia</span> • <span>China</span> • <span>Italia</span> • <span>Japón</span>
+        <span>Estados Unidos</span> • <span>Francia</span> • <span>China</span> • <span>Italia</span> •
+        <span>Japón</span>
     </div>
 
     <section class="client-data">
@@ -40,20 +43,23 @@
         <form action="" id="individual">
             <section class="form-section">
                 <h2 class="section-title">Cotización Individual</h2>
-            
+
                 <div class="form-group">
                     <label>Opciones de Vuelo:</label>
                     <div class="radio-group">
                         <label><input type="radio" name="vuelo" value="sin-avion" checked> Sin Avión (999 MXN)</label>
                         <label><input type="radio" name="vuelo" value="ida"> Avión de IDA (2,499 MXN)</label>
-                        </div>
+                        <label><input type="radio" name="vuelo" value="ida-vuelta">Avión de IDA y VUELTA (5,999 MXN)</label>
+                    </div>
                 </div>
 
                 <div class="form-group">
                     <label>Opciones de Hospedaje:</label>
                     <div class="radio-group">
-                        <label><input type="radio" name="hospedaje" value="sin-hotel" checked> Sin Hotel (499 MXN)</label>
-                        <label><input type="radio" name="hospedaje" value="sencilla"> Habitación Sencilla (799 MXN)</label>
+                        <label><input type="radio" name="hospedaje" value="sin-hotel" checked> Sin Hotel (499
+                            MXN)</label>
+                        <label><input type="radio" name="hospedaje" value="sencilla"> Habitación Sencilla (799
+                            MXN)</label>
                         <label><input type="radio" name="hospedaje" value="doble"> Habitación Doble (999 MXN)</label>
                     </div>
                 </div>
@@ -63,7 +69,11 @@
                     <select id="adultos" name="adultos">
                         <option value="1">1 Adulto</option>
                         <option value="2">2 Adultos</option>
-                        </select>
+                        <option value="3">3 Adulto</option>
+                        <option value="4">4 Adulto</option>
+                        <option value="5">5 Adulto</option>
+                        
+                    </select>
                 </div>
 
                 <div class="form-group">
@@ -79,7 +89,7 @@
                     <label for="diasIndividual">Número de Días (769 MXN por día):</label>
                     <input type="number" id="diasIndividual" name="diasIndividual" min="1" value="1">
                 </div>
-                
+
                 <div class="form-group">
                     <label for="totalIndividual">Total a Pagar:</label>
                     <input type="text" id="totalIndividual" name="totalIndividual" readonly value="$0.00">
@@ -94,11 +104,12 @@
         <form action="" id="paquetes">
             <section class="form-section">
                 <h2 class="section-title">Paquetes Fijos (4 personas)</h2>
-                
+
                 <div class="form-group">
                     <label>Destinos Turísticos:</label>
                     <div class="radio-group">
-                        <label><input type="radio" name="destino" value="europa" checked> Europa de Ensueño (21,999 MXN)</label>
+                        <label><input type="radio" name="destino" value="europa" checked> Europa de Ensueño (21,999
+                            MXN)</label>
                         <label><input type="radio" name="destino" value="asia"> Asia de Tradiciones (25,999 MXN)</label>
                     </div>
                 </div>
@@ -126,4 +137,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
